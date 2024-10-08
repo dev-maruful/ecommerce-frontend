@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { Avatar, Drawer, Dropdown, Skeleton, Menu as AntMenu } from "antd";
@@ -44,17 +45,18 @@ export default function PrivateNavbar() {
       <div className="py-2 pl-4 pr-6 sm:px-8">
         <div className="flex items-center justify-between gap-2 xs:gap-5">
           <Link href={isLoading ? "#" : `/dashboard/${role}`}>
-            <Image
+            <div className="font-bold text-heading-1">Logo</div>
+            {/* <Image
               src={logo}
               alt="telehealth logo"
               className="w-auto cursor-pointer max-xs:h-5 xs:h-8 sm:h-10"
               quality={100}
               loading="eager"
-            />
+            /> */}
           </Link>
 
           {/* For small screens */}
-          <div className="hidden items-center gap-3 max-sm:flex">
+          <div className="items-center hidden gap-3 max-sm:flex">
             {/* User profile dropdown for small screens */}
             <div>
               {isLoading ? (
