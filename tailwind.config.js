@@ -1,0 +1,58 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        dm_sans: ["var(--font-dm_sans)"],
+      },
+      colors: {
+        "gray-50": "#F9FAFB",
+        "gray-100": "#F3F4F6",
+        "gray-200": "#E5E7EB",
+        "gray-300": "#D2D5DA",
+        "gray-400": "#9CA3AF",
+        "gray-500": "#6D7280",
+        "gray-600": "#4B5563",
+        "gray-700": "#374151",
+        "gray-800": "#1F2937",
+        "gray-900": "#111827",
+        "indigo-50": "#eef2ff",
+        "indigo-100": "#e0e7ff",
+        "indigo-200": "#c7d2fe",
+        "indigo-300": "#a5b4fc",
+        "indigo-400": "#818cf8",
+        "indigo-500": "#6366f1",
+        "indigo-600": "#4f46e5",
+        "indigo-700": "#4338ca",
+        "indigo-800": "#3730a3",
+        "indigo-900": "#312e81",
+      },
+      fontSize: {
+        "heading-1": ["48px", "72px"],
+        "heading-2": ["36px", "54px"],
+        "heading-3": ["30px", "44px"],
+        "heading-4": ["24px", "32px"],
+        "heading-5": ["20px", "28px"],
+        "subtitle-large": ["18px", "26px"],
+        "subtitle-medium": ["16px", "24px"],
+        "subtitle-small": ["14px", "20px"],
+        "body-large": ["18px", "28px"],
+        "body-medium": ["16px", "24px"],
+        "body-small": ["14px", "20px"],
+        "button-large": ["18px", "26px"],
+        "button-medium": ["16px", "24px"],
+        "button-small": ["14px", "20px"],
+      },
+      screens: {
+        xs: "475px",
+        "3xl": "1920px",
+      },
+    },
+  },
+  plugins: [],
+};
